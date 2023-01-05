@@ -14,7 +14,7 @@
             onePage: false,
         });
         $(".counter").counterUp({ delay: 10, time: 1000 });
-        $(".countdown").downCount({ date: "01/23/2023 00:00:00", offset: +6 }, function () {
+        $(".countdown").downCount({ date: "01/20/2023 00:00:00", offset: +6 }, function () {
             console.log("Countdown done!");
         });
         $(".popup-link").magnificPopup({
