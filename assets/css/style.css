@@ -632,6 +632,39 @@ nav .main-menu2 li a::before {
 .center-tag{
     text-align: center;
 }
+.btn-reg {
+  display: inline-block;
+  padding: 12px 32px 15px;
+  font-family: oswald, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+.btn-reg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(293deg, #e100ff 0%, rgba(127, 0, 255, 0.99608) 100%);
+  background: -o-linear-gradient(293deg, #e100ff 0%, rgba(127, 0, 255, 0.99608) 100%);
+  background: linear-gradient(157deg, #e100ff 0%, rgba(127, 0, 255, 0.99608) 100%);
+  z-index: -1;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-radius: 8px;
+}
 .btn1 {
   display: inline-block;
   padding: 9px 30px 12px;
@@ -719,16 +752,22 @@ nav .main-menu2 li a::before {
   background: transparent;
 }
 @media (max-width: 575.98px) {
-  .btn1 {
+  .btn-reg {
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: large;
+  }
+  .btn1{
     padding: 8px 25px;
     border-radius: 10px;
   }
 }
-.btn1:hover {
+.btn1:hover,.btn-reg:hover {
   border: 2px solid #8100fe;
   color: #8100fe;
 }
-.btn1:hover::after {
+
+.btn1:hover::after,.btn-reg:hover::after {
   opacity: 0;
   visibility: hidden;
 }
