@@ -1248,6 +1248,9 @@ nav .main-menu2 li a::before {
 .margin-100 {
   margin: 10px 0;
 }
+.science-club-logo{
+  scale: 0.8 ;
+}
 .scrollup {
   background: #fd424d;
   color: #fff;
