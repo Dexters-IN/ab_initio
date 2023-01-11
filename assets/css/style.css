@@ -1251,6 +1251,9 @@ nav .main-menu2 li a::before {
 .science-club-logo{
   scale: 0.8 ;
 }
+.capitalize{
+  text-transform: uppercase;
+}
 .scrollup {
   background: #fd424d;
   color: #fff;
